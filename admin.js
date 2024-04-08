@@ -6,12 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
         const password = document.getElementById('password').value;
         if (password === '1212') {
-            const ipToBan = prompt('Enter IP address to ban:');
-            if (ipToBan) {
-                alert('IP address ' + ipToBan + ' has been banned.');
-            } else {
-                alert('No IP address entered.');
-            }
+            window.location.href = 'admin-panel.html'; // Redirect to admin panel
         } else {
             alert('Incorrect password. Access denied.');
         }
